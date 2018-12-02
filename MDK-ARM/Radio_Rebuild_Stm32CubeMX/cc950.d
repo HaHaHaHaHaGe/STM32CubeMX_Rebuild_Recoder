@@ -36,5 +36,8 @@ radio_rebuild_stm32cubemx\cc950.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx
 radio_rebuild_stm32cubemx\cc950.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 radio_rebuild_stm32cubemx\cc950.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 radio_rebuild_stm32cubemx\cc950.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+radio_rebuild_stm32cubemx\cc950.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+radio_rebuild_stm32cubemx\cc950.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+radio_rebuild_stm32cubemx\cc950.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
 radio_rebuild_stm32cubemx\cc950.o: ../Inc/bsp_driver_sd.h
 radio_rebuild_stm32cubemx\cc950.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

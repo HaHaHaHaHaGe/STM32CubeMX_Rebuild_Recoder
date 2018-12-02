@@ -33,6 +33,9 @@ radio_rebuild_stm32cubemx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_
 radio_rebuild_stm32cubemx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 radio_rebuild_stm32cubemx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 radio_rebuild_stm32cubemx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+radio_rebuild_stm32cubemx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+radio_rebuild_stm32cubemx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+radio_rebuild_stm32cubemx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
 radio_rebuild_stm32cubemx\main.o: ../Inc/fatfs.h
 radio_rebuild_stm32cubemx\main.o: ../Middlewares/Third_Party/FatFs/src/ff.h
 radio_rebuild_stm32cubemx\main.o: ../Middlewares/Third_Party/FatFs/src/integer.h
@@ -42,3 +45,16 @@ radio_rebuild_stm32cubemx\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 radio_rebuild_stm32cubemx\main.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
 radio_rebuild_stm32cubemx\main.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
 radio_rebuild_stm32cubemx\main.o: ../Inc/sd_diskio.h
+radio_rebuild_stm32cubemx\main.o: ../Inc/usb_device.h
+radio_rebuild_stm32cubemx\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h
+radio_rebuild_stm32cubemx\main.o: ../Inc/usbd_conf.h
+radio_rebuild_stm32cubemx\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\fatfs_write_wav.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\wav.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\Source\BasicDataStream\inc\../inc/ringbuffer.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\Source\BasicDataStream\inc\../inc/../../Factory/basic_header.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\Source\BasicDataStream\inc\../inc/../../Factory/basic_macro.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\Source\BasicDataStream\inc\../inc/../../Factory/basic_type.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\malloc.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\Source\Factory\inc\../inc/basic_function.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\Source\Factory\inc\../inc/../basic_header.h

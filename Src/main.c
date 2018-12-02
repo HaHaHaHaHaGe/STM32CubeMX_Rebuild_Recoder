@@ -41,10 +41,13 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "fatfs.h"
+#include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "fatfs_write_wav.h"
+#include "../inc/ringbuffer.h"
+#include "malloc.h"	   
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -92,78 +95,11 @@ HAL_SD_CardInfoTypeDef sdinf;
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-HAL_StatusTypeDef def;
-//unsigned char data[2048];
-unsigned char data2[32768*2];
-FIL fil;                  // file objects
-DIR dir;
-	uint32_t byteswritten;                /* File write counts */
-	uint32_t bytesread;                   /* File read counts */
-	uint8_t wtext[] = "This is STM32 working with FatFs\r\n"; /* File write buffer */
-	uint8_t rtext[100];                     /* File read buffers */
-	char filename[] = "0:/STM32cube3.txt";
+
+char filename4[] = "0:/hahaha.wav";
 
 unsigned int i = 16*1024*1;
-void Fatfs_RW_test(void)
-{
-	  //printf("\r\n ****** FatFs Example ******\r\n\r\n");
- 
-    /*##-1- Register the file system object to the FatFs module ##############*/
-	retSD = f_mount(&SDFatFS, "0:", 1);
-    
-	
-//	if(f_opendir(&dir,"0:/RECORDER2"))//打开录音文件夹
-//	{	 			    
-//		f_mkdir("0:/RECORDER2");				//创建该目录   
-//	}
-     
-    /*##-2- Create and Open new text file objects with write access ######*/
-	
-	
-	
-	
-	
-	
-	
-	
-//    retSD = f_open(&fil, filename, FA_WRITE | FA_OPEN_ALWAYS);
-//		while(i--)
-//		{
-//			retSD = f_write(&fil, data2, sizeof(data2), (void *)&byteswritten);
-//			if(retSD != 0)
-//				Error_Handler();
-//		}
-//    retSD = f_close(&fil);
-    
-     
-		
-		
-		
-		HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,1);
-		HAL_GPIO_WritePin(LED1_GPIO_Port,LED1_Pin,1);
-		while(1)
-		{
-		HAL_GPIO_TogglePin(LED2_GPIO_Port,LED2_Pin);
-		
-    retSD = f_open(&fil, filename, FA_READ);
-		i= 16*1024*1;
-		while(i--)
-		{
-			retSD = f_read(&fil, data2, sizeof(data2), (UINT*)&bytesread);
-			if(retSD != 0)
-			{
-				HAL_GPIO_WritePin(LED1_GPIO_Port,LED1_Pin,0);
-				return;
-			}
-    }
-    retSD = f_close(&fil);
-   
-     
-	}
-		
-		
-		
-}
+
 
 /* USER CODE END 0 */
 
@@ -183,7 +119,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+	my_mem_init(SRAMIN);
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -200,12 +136,21 @@ int main(void)
   MX_TIM3_Init();
   MX_SDIO_SD_Init();
   MX_FATFS_Init();
+  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-
 	HAL_GPIO_WritePin(GPIOB,PWR_CTL_Pin,1);
-	HAL_Delay(200);
-	Fatfs_RW_test();
-	
+	HAL_Delay(1000);
+
+  retSD = f_mount(&SDFatFS, "0:", 1);
+	initial_recoder("0:/12345.wav",16000);
+	start_recoder();
+	i = 1000*300;
+	while(i--)
+	{
+		HAL_Delay(1);
+		tick_recoder();
+	}
+	stop_recoder();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -215,6 +160,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+		
+		
   }
   /* USER CODE END 3 */
 }
@@ -239,9 +186,9 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = 4;
-  RCC_OscInitStruct.PLL.PLLN = 100;
-  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = 5;
+  RCC_OscInitStruct.PLL.PLLN = 192;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV4;
+  RCC_OscInitStruct.PLL.PLLQ = 8;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -360,7 +307,7 @@ static void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 0;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 12499;
+  htim3.Init.Period = 11999;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
   {
