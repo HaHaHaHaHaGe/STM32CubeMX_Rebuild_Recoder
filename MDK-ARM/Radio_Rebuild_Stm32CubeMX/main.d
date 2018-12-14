@@ -58,3 +58,7 @@ radio_rebuild_stm32cubemx\main.o: ..\SelfCode\Source\BasicDataStream\inc\../inc/
 radio_rebuild_stm32cubemx\main.o: ..\SelfCode\malloc.h
 radio_rebuild_stm32cubemx\main.o: ..\SelfCode\Source\Factory\inc\../inc/basic_function.h
 radio_rebuild_stm32cubemx\main.o: ..\SelfCode\Source\Factory\inc\../inc/../basic_header.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\speex-1.2.0\include\speex/speex.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\speex-1.2.0\include\speex/speex_types.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\speex-1.2.0\include\speex/speex_config_types.h
+radio_rebuild_stm32cubemx\main.o: ..\SelfCode\speex-1.2.0\include\speex/speex_bits.h

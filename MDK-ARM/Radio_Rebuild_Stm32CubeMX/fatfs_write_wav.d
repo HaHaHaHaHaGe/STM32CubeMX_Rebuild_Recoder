@@ -55,3 +55,7 @@ radio_rebuild_stm32cubemx\fatfs_write_wav.o: ..\SelfCode\malloc.h
 radio_rebuild_stm32cubemx\fatfs_write_wav.o: ..\SelfCode\Source\Factory\inc\../inc/basic_function.h
 radio_rebuild_stm32cubemx\fatfs_write_wav.o: ..\SelfCode\Source\Factory\inc\../inc/../basic_header.h
 radio_rebuild_stm32cubemx\fatfs_write_wav.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+radio_rebuild_stm32cubemx\fatfs_write_wav.o: ..\SelfCode\speex-1.2.0\include\speex/speex.h
+radio_rebuild_stm32cubemx\fatfs_write_wav.o: ..\SelfCode\speex-1.2.0\include\speex/speex_types.h
+radio_rebuild_stm32cubemx\fatfs_write_wav.o: ..\SelfCode\speex-1.2.0\include\speex/speex_config_types.h
+radio_rebuild_stm32cubemx\fatfs_write_wav.o: ..\SelfCode\speex-1.2.0\include\speex/speex_bits.h

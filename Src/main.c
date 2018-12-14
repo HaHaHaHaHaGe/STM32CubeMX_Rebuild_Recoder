@@ -48,6 +48,7 @@
 #include "fatfs_write_wav.h"
 #include "../inc/ringbuffer.h"
 #include "malloc.h"	   
+#include <speex/speex.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -101,6 +102,31 @@ char filename4[] = "0:/hahaha.wav";
 unsigned int i = 16*1024*1;
 
 
+
+
+SpeexBits bits;/* Holds bits so they can be read and written by the Speex routines */
+void *enc_state, *dec_state;/* Holds the states of the encoder & the decoder */
+int quality = 3, complexity=1, vbr=0, enh=1;/* SPEEX PARAMETERS, MUST REMAINED UNCHANGED */
+int frame_size;
+void Speex_Init(void)
+{
+  /* Speex encoding initializations */ 
+  speex_bits_init(&bits);
+  enc_state = speex_encoder_init(&speex_nb_mode);
+  speex_encoder_ctl(enc_state, SPEEX_SET_VBR, &vbr);
+  speex_encoder_ctl(enc_state, SPEEX_SET_QUALITY,&quality);
+  speex_encoder_ctl(enc_state, SPEEX_SET_COMPLEXITY, &complexity);
+	
+	speex_encoder_ctl(enc_state,SPEEX_GET_SAMPLING_RATE,&frame_size);
+
+  /* speex decoding intilalization */
+  dec_state = speex_decoder_init(&speex_nb_mode);
+  speex_decoder_ctl(dec_state, SPEEX_SET_ENH, &enh);
+}
+
+
+
+
 /* USER CODE END 0 */
 
 /**
@@ -140,14 +166,16 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	HAL_GPIO_WritePin(GPIOB,PWR_CTL_Pin,1);
 	HAL_Delay(1000);
+	my_mem_init(0);
+	Speex_Init();
 
   retSD = f_mount(&SDFatFS, "0:", 1);
-	initial_recoder("0:/12345.wav",16000);
+	initial_recoder("0:/12345",8000);
 	start_recoder();
-	i = 1000*300;
+	i = 300*1000;
 	while(i--)
 	{
-		HAL_Delay(1);
+		//HAL_Delay(1);
 		tick_recoder();
 	}
 	stop_recoder();
@@ -389,7 +417,28 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+/**
+  * @brief  Ovveride the _speex_fatal function of the speex library
+  * @param  None
+  * @retval : None
+  */
+void _speex_fatal(const char *str, const char *file, int line)
+{
+  while(1)
+  {
+  };
+}
+/**
+  * @brief  Ovveride the _speex_putc function of the speex library
+  * @param  None
+  * @retval : None
+  */
+void _speex_putc(int ch, void *file)
+{
+  while(1)
+  {
+  };
+}
 /* USER CODE END 4 */
 
 /**

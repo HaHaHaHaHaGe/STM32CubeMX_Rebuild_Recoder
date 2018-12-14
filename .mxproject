@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/Administrator/Desktop/github_code/Radio_Rebuild_Stm32CubeMX/Inc
+HeaderPath=C:/Users/Administrator/Desktop/github_code/STM32CubeMX_Rebuild_Recoder/Inc
 HeaderFiles=stm32f4xx_it.h;stm32f4xx_hal_conf.h;main.h;ffconf.h;bsp_driver_sd.h;sd_diskio.h;fatfs.h;usb_device.h;usbd_conf.h;usbd_desc.h;usbd_storage_if.h;
-SourcePath=C:/Users/Administrator/Desktop/github_code/Radio_Rebuild_Stm32CubeMX/Src
+SourcePath=C:/Users/Administrator/Desktop/github_code/STM32CubeMX_Rebuild_Recoder/Src
 SourceFiles=stm32f4xx_it.c;stm32f4xx_hal_msp.c;main.c;bsp_driver_sd.c;sd_diskio.c;fatfs.c;usb_device.c;usbd_conf.c;usbd_desc.c;usbd_storage_if.c;
 
 [PreviousLibFiles]
