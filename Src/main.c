@@ -106,7 +106,7 @@ unsigned int i = 16*1024*1;
 
 SpeexBits bits;/* Holds bits so they can be read and written by the Speex routines */
 void *enc_state, *dec_state;/* Holds the states of the encoder & the decoder */
-int quality = 3, complexity=1, vbr=0, enh=1;/* SPEEX PARAMETERS, MUST REMAINED UNCHANGED */
+int quality = 4, complexity=1, vbr=0, enh=1;/* SPEEX PARAMETERS, MUST REMAINED UNCHANGED */
 int frame_size;
 void Speex_Init(void)
 {
@@ -172,7 +172,7 @@ int main(void)
   retSD = f_mount(&SDFatFS, "0:", 1);
 	initial_recoder("0:/12345",8000);
 	start_recoder();
-	i = 300*1000;
+	i = 0x7fffffff;
 	while(i--)
 	{
 		//HAL_Delay(1);

@@ -119,10 +119,6 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
-          <Key>DLGUARM</Key>
-        </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
           <Key>ARMRTXEVENTFLAGS</Key>
           <Name>-L70 -Z18 -C0 -M0 -T1</Name>
         </SetRegEntry>
@@ -966,7 +962,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\bits.c</PathWithFileName>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\bits.c</PathWithFileName>
       <FilenameWithoutPath>bits.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -978,8 +974,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\cb_search.c</PathWithFileName>
-      <FilenameWithoutPath>cb_search.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\buffer.c</PathWithFileName>
+      <FilenameWithoutPath>buffer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -990,8 +986,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\exc_5_64_table.c</PathWithFileName>
-      <FilenameWithoutPath>exc_5_64_table.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\exc_10_32_table.c</PathWithFileName>
+      <FilenameWithoutPath>exc_10_32_table.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1002,8 +998,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\exc_5_256_table.c</PathWithFileName>
-      <FilenameWithoutPath>exc_5_256_table.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\gain_table_lbr.c</PathWithFileName>
+      <FilenameWithoutPath>gain_table_lbr.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1014,8 +1010,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\exc_8_128_table.c</PathWithFileName>
-      <FilenameWithoutPath>exc_8_128_table.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\high_lsp_tables.c</PathWithFileName>
+      <FilenameWithoutPath>high_lsp_tables.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1026,8 +1022,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\exc_10_16_table.c</PathWithFileName>
-      <FilenameWithoutPath>exc_10_16_table.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\lpc.c</PathWithFileName>
+      <FilenameWithoutPath>lpc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1038,8 +1034,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\exc_10_32_table.c</PathWithFileName>
-      <FilenameWithoutPath>exc_10_32_table.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\lsp.c</PathWithFileName>
+      <FilenameWithoutPath>lsp.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1050,8 +1046,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\exc_20_32_table.c</PathWithFileName>
-      <FilenameWithoutPath>exc_20_32_table.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\speex.c</PathWithFileName>
+      <FilenameWithoutPath>speex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1062,8 +1058,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\filters.c</PathWithFileName>
-      <FilenameWithoutPath>filters.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\speex_callbacks.c</PathWithFileName>
+      <FilenameWithoutPath>speex_callbacks.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1074,8 +1070,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\gain_table.c</PathWithFileName>
-      <FilenameWithoutPath>gain_table.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\speex_header.c</PathWithFileName>
+      <FilenameWithoutPath>speex_header.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1086,8 +1082,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\gain_table_lbr.c</PathWithFileName>
-      <FilenameWithoutPath>gain_table_lbr.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\window.c</PathWithFileName>
+      <FilenameWithoutPath>window.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1098,8 +1094,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\hexc_10_32_table.c</PathWithFileName>
-      <FilenameWithoutPath>hexc_10_32_table.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\STM32\libspeex\cb_search.c</PathWithFileName>
+      <FilenameWithoutPath>cb_search.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1110,8 +1106,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\hexc_table.c</PathWithFileName>
-      <FilenameWithoutPath>hexc_table.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\STM32\libspeex\filters.c</PathWithFileName>
+      <FilenameWithoutPath>filters.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1122,8 +1118,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\high_lsp_tables.c</PathWithFileName>
-      <FilenameWithoutPath>high_lsp_tables.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\STM32\libspeex\ltp.c</PathWithFileName>
+      <FilenameWithoutPath>ltp.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1134,8 +1130,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\kiss_fft.c</PathWithFileName>
-      <FilenameWithoutPath>kiss_fft.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\STM32\libspeex\modes.c</PathWithFileName>
+      <FilenameWithoutPath>modes.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1146,8 +1142,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\kiss_fftr.c</PathWithFileName>
-      <FilenameWithoutPath>kiss_fftr.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\STM32\libspeex\nb_celp.c</PathWithFileName>
+      <FilenameWithoutPath>nb_celp.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1158,8 +1154,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\lpc.c</PathWithFileName>
-      <FilenameWithoutPath>lpc.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\STM32\libspeex\quant_lsp.c</PathWithFileName>
+      <FilenameWithoutPath>quant_lsp.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1170,8 +1166,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\lsp.c</PathWithFileName>
-      <FilenameWithoutPath>lsp.c</FilenameWithoutPath>
+      <PathWithFileName>..\SelfCode\Speex_Lib\STM32\libspeex\vq.c</PathWithFileName>
+      <FilenameWithoutPath>vq.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1182,188 +1178,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\lsp_tables_nb.c</PathWithFileName>
+      <PathWithFileName>..\SelfCode\Speex_Lib\libspeex\lsp_tables_nb.c</PathWithFileName>
       <FilenameWithoutPath>lsp_tables_nb.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>71</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\ltp.c</PathWithFileName>
-      <FilenameWithoutPath>ltp.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>72</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\modes.c</PathWithFileName>
-      <FilenameWithoutPath>modes.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>73</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\modes_wb.c</PathWithFileName>
-      <FilenameWithoutPath>modes_wb.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>74</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\nb_celp.c</PathWithFileName>
-      <FilenameWithoutPath>nb_celp.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>75</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\quant_lsp.c</PathWithFileName>
-      <FilenameWithoutPath>quant_lsp.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>76</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\sb_celp.c</PathWithFileName>
-      <FilenameWithoutPath>sb_celp.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>77</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\smallft.c</PathWithFileName>
-      <FilenameWithoutPath>smallft.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>78</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\speex.c</PathWithFileName>
-      <FilenameWithoutPath>speex.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>79</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\speex_callbacks.c</PathWithFileName>
-      <FilenameWithoutPath>speex_callbacks.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>80</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\speex_header.c</PathWithFileName>
-      <FilenameWithoutPath>speex_header.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>81</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\stereo.c</PathWithFileName>
-      <FilenameWithoutPath>stereo.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>82</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\vbr.c</PathWithFileName>
-      <FilenameWithoutPath>vbr.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>83</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\vorbis_psy.c</PathWithFileName>
-      <FilenameWithoutPath>vorbis_psy.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>84</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\vq.c</PathWithFileName>
-      <FilenameWithoutPath>vq.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>85</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\SelfCode\speex-1.2.0\libspeex\window.c</PathWithFileName>
-      <FilenameWithoutPath>window.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

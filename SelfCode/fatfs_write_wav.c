@@ -171,31 +171,31 @@ void tick_recoder()
 			write_wav_file(data_2,data2_len);
 		}
 		Encoder_Flag = 0;
-		speex_bits_reset(&bits);
-		while((wdata_len - rdata_len) / IN_SOURE_FRAME_SIZE > 0)
+		//speex_bits_reset(&bits);
+		while((wdata_len - rdata_len) / (IN_SOURE_FRAME_SIZE*2) > 0)
 		{
 			Encoder_Flag = 1;
-			//speex_bits_reset(&bits);
+			speex_bits_reset(&bits);
 			/* Encode the frame */
 			speex_encode_int(enc_state, (spx_int16_t*)&rdata[rdata_len], &bits);
 			/* Copy the bits to an array of char that can be decoded */
-			//speex_bits_write(&bits, (char *)&recoder_outdata[recoder_out_data_loc], ENCODED_FRAME_SIZE);
-			rdata_len+=IN_SOURE_FRAME_SIZE;
-			//recoder_out_data_loc+=ENCODED_FRAME_SIZE;
+			speex_bits_write(&bits, (char *)&recoder_outdata[recoder_out_data_loc], ENCODED_FRAME_SIZE);
+			rdata_len+=IN_SOURE_FRAME_SIZE*2;
+			recoder_out_data_loc+=ENCODED_FRAME_SIZE;
 		}
 		if(Encoder_Flag == 1)
 		{
 			
-			recoder_out_data_loc = speex_bits_write(&bits, (char *)recoder_outdata, ENCODED_FRAME_SIZE*1024*100);
+			//recoder_out_data_loc = speex_bits_write(&bits, (char *)recoder_outdata, ENCODED_FRAME_SIZE*1024*100);
 			
 			for(rd_i = 0; rd_i < (wdata_len - rdata_len); rd_i++)
-				recoder_outdata[rd_i] = recoder_outdata[rdata_len + rd_i];
+				rdata[rd_i] = rdata[rdata_len + rd_i];
 
 			wdata_len = (wdata_len - rdata_len);
 			rdata_len = 0;
 			
 			write_speex_file(recoder_outdata,recoder_out_data_loc);
-			//recoder_out_data_loc = 0;
+			recoder_out_data_loc = 0;
 		}
 }
 
